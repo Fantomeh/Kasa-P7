@@ -1,9 +1,15 @@
+import { TopMenu } from "./TopMenu"
+import { Logo } from "./Logo"
+
+import './Header.css';
+
 export const Header = () => {
 
     return (
-        <div>
-            <h2>Bienvenue!2</h2>
-        </div>
+        <header className="header-setting">
+            <TopMenu/>
+            <Logo/>
+        </header>
     )
 
 }

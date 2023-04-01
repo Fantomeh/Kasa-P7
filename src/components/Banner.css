@@ -1,0 +1,12 @@
+.banner {
+  background-image: url('../img/Banner-kasa.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+}
