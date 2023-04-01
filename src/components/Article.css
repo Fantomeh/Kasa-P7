@@ -1,4 +1,21 @@
 .Article {
-    display: flex;
-    background-color: red;
-}
+    position: relative;
+    
+    
+  }
+  
+  .Article-image {
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .Article-title {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }

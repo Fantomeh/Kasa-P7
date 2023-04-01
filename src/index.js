@@ -1,35 +1,39 @@
+// index.js
+
+// Importez les bibliothèques nécessaires
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Home } from "./pages/Home"
+import { Home } from './pages/Home';
+import { Accommodation } from './pages/Accommodation';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/test",
-    element: <div>Salam</div>,
-  },
-]);
-
+// Récupérez l'élément racine du DOM dans lequel vous voulez afficher votre application
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Rendez votre application à l'intérieur de l'élément racine du DOM
 root.render(
   <React.StrictMode>
-    <App>
-      <RouterProvider router={router} />
-    </App>
+    // Utilisez le composant Router pour gérer la navigation dans votre application
+    <Router>
+      <App>
+        // Utilisez le composant Routes pour définir les différentes routes de votre application
+        <Routes>
+          // Définissez une route pour la page d'accueil
+          <Route path="/" element={<Home />} />
+          // Définissez une route pour une page de test
+          <Route path="/test" element={<div>Salam</div>} />
+          // Ajoutez une nouvelle route pour les pages de logement avec l'ID du logement en paramètre
+          <Route path="/logement/:id" element={<Accommodation />} />
+        </Routes>
+      </App>
+    </Router>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Si vous voulez commencer à mesurer les performances de votre application, passez une fonction
+// pour enregistrer les résultats (par exemple: reportWebVitals(console.log))
+// ou envoyez-les à un point de terminaison d'analyse. Apprenez-en plus: https://bit.ly/CRA-vitals
 reportWebVitals();
