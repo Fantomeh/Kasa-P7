@@ -1,0 +1,7 @@
+img {
+    filter: brightness(0) invert(1);
+  }
+
+  .Footer{
+    background-color: black;
+  }

@@ -1,7 +1,8 @@
 import './Section.css';
+import { Article } from './Article';
 
 export const Section = () => {
     return (
-      <section className="Section"><p>test</p></section>
+      <section className="Section"><Article/></section>
     );
   }
