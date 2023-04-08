@@ -10,7 +10,7 @@ export const Home = () => {
     return (
         <div>
             <Header />
-            <Banner/>
+            <Banner image="home" text="Chez vous, partout et ailleurs" />
             <Section/>
             <Footer/>
         </div>

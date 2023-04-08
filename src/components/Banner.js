@@ -1,9 +1,14 @@
+// Banner.js
 import './Banner.css';
 
-export const Banner = () => {
+// Ajoutez la prop "text" au composant Banner
+export const Banner = ({ image, text }) => {
+  const backgroundImage = image === "home" ? "img-Home" : "img-About";
+
   return (
-    <div className="banner">
-      <p>Chez vous, partout et ailleurs</p>
+    <div className={`banner ${backgroundImage}`}>
+      {/* Vérifiez si la prop "text" est définie et affichez le texte si nécessaire */}
+      {text && <p>{text}</p>}
     </div>
   );
-}
+};

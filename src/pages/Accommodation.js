@@ -1,21 +1,33 @@
-// Importez les bibliothèques nécessaires
+// Importer les bibliothèques et composants nécessaires
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import data from "../data/logements.json";
 import NotFound from "./NotFound";
 import Carousel from "../components/Carousel";
+import ExpandableSection from "../components/ExpandableSection";
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
+import { AccommodationTitle } from "../components/AccommodationTitle";
+import { HostDetails } from "../components/HostDetails";
+import { EquipmentList } from "../components/EquipmentList";
+import { TagList } from "../components/TagList";
+import { Localisation } from "../components/Localisation";
+import { RatingStars } from "../components/RatingStars";
 
-// Créez un composant fonctionnel pour afficher les détails d'un logement
+
+
+// Déclarer le composant Accommodation
 export const Accommodation = () => {
-  // Récupérez l'ID du logement à partir des paramètres de l'URL
+  // Utiliser les paramètres de l'URL pour récupérer l'ID du logement
   const { id } = useParams();
 
-  // Utilisez l'ID pour trouver le bon logement dans le fichier JSON
-  // Initialisez l'état du logement avec null
+  // Déclarer l'état du logement et l'initialiser à null
   const [accommodation, setAccommodation] = useState(null);
+
+  // Déclarer l'état pour vérifier si le logement est introuvable et l'initialiser à false
   const [notFound, setNotFound] = useState(false);
 
-  // Utilisez l'effet pour mettre à jour l'état du logement lors de la récupération de l'ID
+  // Utiliser l'effet pour rechercher le logement correspondant à l'ID et mettre à jour l'état du logement
   useEffect(() => {
     const foundAccommodation = data.find((item) => item.id === id);
     if (foundAccommodation) {
@@ -25,58 +37,51 @@ export const Accommodation = () => {
     }
   }, [id]);
 
-  // Si l'ID est incorrect, redirigez vers la page NotFound
+  // Si le logement n'est pas trouvé, afficher la page NotFound
   if (notFound) {
     return <NotFound />;
   }
 
-  // Si le logement n'est pas encore trouvé, affichez un message de chargement
+  // Si le logement n'a pas encore été trouvé, afficher un message de chargement
   if (!accommodation) {
     return <div>Chargement...</div>;
   }
 
-  // Affichez les détails du logement trouvé
+  // Retourner le contenu du composant Accommodation avec les composants et les données du logement
   return (
     <div>
-      {/* Affichez le titre du logement */}
-      <h2>{accommodation.title}</h2>
+      {/* Afficher le composant Header */}
+      <Header />
 
-      {/* Ajoutez le composant Carousel avec les images du logement */}
+      {/* Afficher le composant Carousel avec les images du logement */}
       <Carousel pictures={accommodation.pictures} />
 
-      {/* Affichez l'image de couverture du logement */}
-      <img src={accommodation.cover} alt={accommodation.title} />
+      {/* Afficher le titre du logement */}
+      <AccommodationTitle title={accommodation.title} />
 
-      {/* Affichez la description du logement */}
-      <p>{accommodation.description}</p>
+      {/* Afficher les informations de localisation dans une section extensible */}
+      <Localisation location={accommodation.location} />
 
-      {/* Affichez les informations sur l'hôte */}
-      <h3>Hôte</h3>
-      <p>{accommodation.host.name}</p>
 
-      {/* Affichez la photo de l'hôte */}
-      <img
-        src={accommodation.host.picture}
-        alt={`Photo de l'hôte ${accommodation.host.name}`}
-      />
+      {/* Afficher la liste des tags */}
+      <TagList tags={accommodation.tags} />
 
-      {/* Affichez la liste des équipements */}
-      <h3>Équipements</h3>
-      <ul>
-        {accommodation.equipments.map((equipment, index) => {
-          // Affichez chaque équipement dans un élément de liste
-          return <li key={index}>{equipment}</li>;
-        })}
-      </ul>
+      {/* Afficher les étoiles en fonction du rating */}
+      <RatingStars rating={accommodation.rating} />
 
-      {/* Affichez la liste des tags */}
-      <h3>Tags</h3>
-      <ul>
-        {accommodation.tags.map((tag, index) => {
-          // Affichez chaque tag dans un élément de liste
-          return <li key={index}>{tag}</li>;
-        })}
-      </ul>
+      {/* Afficher les détails de l'hôte */}
+      <HostDetails host={accommodation.host} />
+
+      {/* Afficher la description du logement dans une section extensible */}
+      <ExpandableSection title="Description">
+        <p>{accommodation.description}</p>
+      </ExpandableSection>
+
+      {/* Afficher la liste des équipements dans une section extensible */}
+      <EquipmentList equipments={accommodation.equipments} />
+
+      {/* Afficher le composant Footer */}
+      <Footer />
     </div>
   );
 };

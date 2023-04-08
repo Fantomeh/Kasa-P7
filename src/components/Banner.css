@@ -1,5 +1,4 @@
 .banner {
-  background-image: url('../img/Banner-kasa.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,4 +8,12 @@
   align-items: center;
   justify-content: center;
   margin: 100px;
+}
+
+.img-Home {
+  background-image: url('../img/Banner-kasa.png');
+}
+
+.img-About {
+  background-image: url('../img/img2-kasa.png');
 }
