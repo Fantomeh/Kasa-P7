@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import data from "../data/logements.json";
-import NotFound from './NotFound';
+import NotFound from "./NotFound";
+import Carousel from "../components/Carousel";
 
 // Créez un composant fonctionnel pour afficher les détails d'un logement
 export const Accommodation = () => {
@@ -39,6 +40,9 @@ export const Accommodation = () => {
     <div>
       {/* Affichez le titre du logement */}
       <h2>{accommodation.title}</h2>
+
+      {/* Ajoutez le composant Carousel avec les images du logement */}
+      <Carousel pictures={accommodation.pictures} />
 
       {/* Affichez l'image de couverture du logement */}
       <img src={accommodation.cover} alt={accommodation.title} />
