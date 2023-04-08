@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
+
 export const TopMenu = () => {
-
-    return (
-        
-            <nav><a href="#">Accueil</a><a href="#">A Propos</a></nav>
-        
-    )
-
-}
+  return (
+    <nav>
+      <Link to="/">Accueil</Link>
+      <Link to="/a-propos">A Propos</Link>
+    </nav>
+  );
+};

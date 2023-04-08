@@ -10,6 +10,7 @@ import reportWebVitals from './reportWebVitals';
 import { Home } from './pages/Home';
 import { Accommodation } from './pages/Accommodation';
 import NotFound from './pages/NotFound';
+import { About } from './pages/About';
 
 // Récupérez l'élément racine du DOM dans lequel vous voulez afficher votre application
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,8 +25,8 @@ root.render(
         <Routes>
           {/* Définissez une route pour la page d'accueil */}
           <Route path="/" element={<Home />} />
-          {/* Définissez une route pour une page de test */}
-          <Route path="/test" element={<div>Salam</div>} />
+          {/* Définissez une route pour une page de About */}
+          <Route path="/a-propos" element={<About />} />
           {/* Ajoutez une nouvelle route pour les pages de logement avec l'ID du logement en paramètre */}
           <Route
             path="/logement/:id"
