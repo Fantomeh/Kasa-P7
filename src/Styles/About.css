@@ -1,0 +1,43 @@
+* {
+    font-family: Montserrat;
+}
+
+
+.container {
+    width: 95%;
+  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-ExpandableSection {
+    margin-bottom: 80px;
+}
+
+/* Styles pour les tablettes */
+@media (min-width: 400px) {}
+
+/* Styles pour les ordinateurs de bureau */
+@media (min-width: 1024px) {
+
+    .container {
+        width: 95%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .container-ExpandableSection {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+
+
+}

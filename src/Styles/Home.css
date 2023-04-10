@@ -4,12 +4,7 @@
 }
 
 
-.container {
-    width: 95%;
-    max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 /* Styles pour les tablettes */
 @media (min-width: 400px) {
@@ -17,6 +12,11 @@
         margin-top: 30px;
     }
 
+    .container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 
 
@@ -65,10 +65,7 @@
         background-color: #f7f7f7;
     }
 
-    .Article-image {
-        
-    
-    }
+
 
     .Article {
         margin: 6%;

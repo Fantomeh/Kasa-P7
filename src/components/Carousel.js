@@ -8,10 +8,16 @@ const Carousel = ({ pictures }) => {
   const [index, setIndex] = useState(0); // Variable de compteur, défini au départ sur 0
   const totalPictures = pictures.length - 1; // Nombre max d'images
 
-  // Si l'index est inférieur à zéro, définit le nombre d'images max
-  if (index < 0) setIndex(totalPictures);
-  // Si l'index est supérieur au max d'images, alors met à zéro
-  if (index > totalPictures) setIndex(0);
+
+  const onPreviousBtnClick = () => {
+    if (index === 0) setIndex(pictures.length - 1);
+    else setIndex(index - 1)
+  }
+
+  const onNextBtnClick = () => {
+    if (index === pictures.length - 1) setIndex(0)
+    else setIndex(index + 1)
+  }
 
   return (
     <div className="carousel">
@@ -29,14 +35,14 @@ const Carousel = ({ pictures }) => {
       {totalPictures > 0 && (
         <div>
           {/* Les boutons qui afficheront les flèches */}
-          <button onClick={() => setIndex(index - 1)}>
+          <button onClick={onPreviousBtnClick}>
             <img
               src={flecheGauche}
               className="classFlecheGauche"
               alt={"flèche gauche pour changer de photo " + index}
             />
           </button>
-          <button onClick={() => setIndex(index + 1)}>
+          <button onClick={onNextBtnClick}>
             <img
               src={flecheDroit}
               className="classFlecheDroit"

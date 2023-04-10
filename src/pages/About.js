@@ -3,6 +3,7 @@ import ExpandableSection from '../components/ExpandableSection';
 import { Header } from "../components/Header"
 import { Banner } from "../components/Banner"
 import { Footer } from '../components/Footer';
+import "../Styles/About.css"
 
 
 
@@ -12,8 +13,7 @@ export const About = () => {
     <div className='container'>
       <Header />
       <Banner image="about" />
-      <h1>A Propos</h1>
-      <p>Informations sur notre site et notre entreprise.</p>
+      <div className='container-ExpandableSection'>
       <ExpandableSection title="Fiabilité">
         {"Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."}
       </ExpandableSection>
@@ -27,9 +27,8 @@ export const About = () => {
         {"La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."}
       </ExpandableSection>
       </div>
+      </div>
       <Footer />
     </>
-
-    
   );
 };

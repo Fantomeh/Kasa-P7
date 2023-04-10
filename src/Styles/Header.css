@@ -1,4 +1,15 @@
-/* Styles pour les tablettes */
+.Bouton-Header-link{
+    padding: 20px;
+    text-decoration: none;
+    color: #FF6060;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
 @media (min-width: 400px) {
     .header-setting {
         display: flex;
@@ -6,10 +17,9 @@
         flex-direction: row-reverse;
     }
 
-    img {
-
+    .logo-Header {
         color: #FF6060;
-
+        height: 45px;
     }
 
     .header-setting {
@@ -17,37 +27,17 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
-     
         margin-top: 43px;
         margin-bottom: 41px;
-   
-        
     }
 
     .Bouton-Header{
   
-        font-size: 2rem;
+        font-size: 1.4rem;
         
     }
 
-    .Bouton-Header-link{
-        padding: 20px;
-        text-decoration: none;
-        color: #FF6060;
-        
-    }
-
-    .Bouton-Header-link-active {
-        font-weight: bold;
-       
-      }
-      
-
-    img {
-
-        color: #FF6060;
-
-    }
+   
 }
 
 
@@ -58,6 +48,5 @@
     .Bouton-Header {
         padding: 0;
         margin-top: 1px
-       
       }
 }
