@@ -1,7 +1,8 @@
 import React from 'react';
 import { TopMenu } from "./TopMenu";
 import { Logo } from "./Logo";
-import './Header.css';
+import '../Styles/Header.css'
+
 
 export const Header = () => {
   return (

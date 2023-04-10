@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'; // Importez le composant Link pour gérer la navigation
-import "./Article.css"
+import '../Styles/Home.css'
 
 // Ajout des props pour l'ID, le titre et l'image du logement
 export const Article = ({ id, title, cover }) => {

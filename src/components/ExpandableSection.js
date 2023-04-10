@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../Styles/ExpandableSection.css';
 
 // Définissez le composant ExpandableSection, qui prend un titre et des enfants en tant que props
 const ExpandableSection = ({ title, children }) => {
@@ -12,13 +13,13 @@ const ExpandableSection = ({ title, children }) => {
   };
 
   return (
-    <div>
+    <div className='Expandable'>
       {/* Affichez le titre et attachez le gestionnaire d'événements onClick */}
-      <h3 onClick={handleClick} style={{ cursor: 'pointer' }}>
+      <h3 onClick={handleClick} style={{ cursor: 'pointer' }} className='Expandable-title'>
         {title}
       </h3>
       {/* Si la section est ouverte, affichez les enfants */}
-      {isOpen && <div>{children}</div>}
+      {isOpen && <div className='Expandable-text'>{children}</div>}
     </div>
   );
 };

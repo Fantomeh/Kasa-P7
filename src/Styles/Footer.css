@@ -1,0 +1,22 @@
+.Footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Div-Footer {
+  margin-top: 100px;
+  margin-bottom: 62px;
+}
+
+.logo-Footer {
+  Width: 250px;
+ 
+}
+
+.p-footer {
+  font-size: 1.5rem;
+  color: white;
+}

@@ -1,10 +1,23 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const TopMenu = () => {
   return (
-    <nav>
-      <Link to="/">Accueil</Link>
-      <Link to="/a-propos">A Propos</Link>
+    <nav className='Bouton-Header'>
+      <NavLink
+        className='Bouton-Header-link'
+        activeClassName='Bouton-Header-link-active'
+        exact
+        to="/"
+      >
+        Accueil
+      </NavLink>
+      <NavLink
+        className='Bouton-Header-link'
+        activeClassName='Bouton-Header-link-active'
+        to="/a-propos"
+      >
+        A Propos
+      </NavLink>
     </nav>
   );
 };

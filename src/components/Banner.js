@@ -1,5 +1,5 @@
 // Banner.js
-import './Banner.css';
+import '../Styles/Banner.css';
 
 // Ajoutez la prop "text" au composant Banner
 export const Banner = ({ image, text }) => {
@@ -8,7 +8,7 @@ export const Banner = ({ image, text }) => {
   return (
     <div className={`banner ${backgroundImage}`}>
       {/* Vérifiez si la prop "text" est définie et affichez le texte si nécessaire */}
-      {text && <p>{text}</p>}
+      {text && <h1 className='banner-h1'>{text}</h1>}
     </div>
   );
 };

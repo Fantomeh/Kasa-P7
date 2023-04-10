@@ -1,0 +1,45 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+  height: 154px;
+  font-size: 22px;
+  object-fit: cover;
+  padding-left: 1px; 
+}
+
+.banner-h1 {
+  margin-left: 21px;
+  color: #fff;
+font-size: clamp(20px,4vw,48px);
+font-weight: 500;
+  
+}
+
+.img-Home {
+  background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/Banner-kasa.png);
+}
+
+.img-About {
+  
+  background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/img2-kasa.png);
+}
+
+
+
+
+/* Styles pour les ordinateurs de bureau */
+@media (min-width: 1024px) {
+  .banner {
+
+    height: 302px;
+  
+  }
+  
+}

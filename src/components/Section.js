@@ -1,6 +1,7 @@
-import './Section.css';
+import '../Styles/Home.css'
 import { Article } from './Article';
 import accommodations from '../data/logements.json';
+
 
 export const Section = () => {
     return (

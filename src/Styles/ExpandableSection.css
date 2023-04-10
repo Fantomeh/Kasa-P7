@@ -1,0 +1,15 @@
+.Expandable{
+    background-color:  #F6F6F6;
+;
+}
+
+.Expandable-title{
+    background-color: #FF6060;
+    border-radius: 5px;
+    color: #F6F6F6;
+}
+
+.Expandable-text{
+    color: #FF6060;
+
+}
