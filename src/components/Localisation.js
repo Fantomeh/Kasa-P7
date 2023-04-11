@@ -7,7 +7,7 @@ export const Localisation = ({ location }) => {
   return (
     <div>
       {/* Afficher la localisation dans un élément <h3> */}
-      <h3>{location}</h3>
+      <h3 className="Location">{location}</h3>
     </div>
   );
 };

@@ -2,22 +2,22 @@ import React, { useState } from 'react';
 import flecheGauche from '../img/FlecheGauche.png';
 import flecheDroit from '../img/FlecheDroit.png';
 
-
 const Carousel = ({ pictures }) => {
   // Reçoit un tableau avec les URL des images
   const [index, setIndex] = useState(0); // Variable de compteur, défini au départ sur 0
   const totalPictures = pictures.length - 1; // Nombre max d'images
 
-
+  // Fonction pour passer à l'image précédente
   const onPreviousBtnClick = () => {
     if (index === 0) setIndex(pictures.length - 1);
-    else setIndex(index - 1)
-  }
+    else setIndex(index - 1);
+  };
 
+  // Fonction pour passer à l'image suivante
   const onNextBtnClick = () => {
-    if (index === pictures.length - 1) setIndex(0)
-    else setIndex(index + 1)
-  }
+    if (index === pictures.length - 1) setIndex(0);
+    else setIndex(index + 1);
+  };
 
   return (
     <div className="carousel">
@@ -33,7 +33,7 @@ const Carousel = ({ pictures }) => {
 
       {/* Si plus d'une image, alors ce code sera exécuté */}
       {totalPictures > 0 && (
-        <div>
+        <div className="div-boutons">
           {/* Les boutons qui afficheront les flèches */}
           <button onClick={onPreviousBtnClick}>
             <img
@@ -51,6 +51,8 @@ const Carousel = ({ pictures }) => {
           </button>
         </div>
       )}
+
+      {/* Affiche le compteur d'images s'il y a plus d'une image */}
       {totalPictures > 0 && (
         <div className="div-compteur">
           {/* Compteur d'images */}
