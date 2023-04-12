@@ -44,16 +44,16 @@ export const Accommodation = () => {
       {/* Afficher les informations de localisation dans une section extensible */}
       <Localisation location={accommodation.location} />
 
-
+    
       {/* Afficher la liste des tags */}
       <TagList tags={accommodation.tags} />
-
+      <div className="Rating-name">
       {/* Afficher les étoiles en fonction du rating */}
       <RatingStars rating={accommodation.rating} />
 
       {/* Afficher les détails de l'hôte */}
       <HostDetails host={accommodation.host} />
-
+      </div>
       {/* Afficher la description du logement dans une section extensible */}
       <ExpandableSection title="Description">
         <p>{accommodation.description}</p>

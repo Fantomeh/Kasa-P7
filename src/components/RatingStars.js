@@ -35,5 +35,5 @@ export const RatingStars = ({ rating }) => {
   }
 
   // Retourner un élément <div> contenant les étoiles
-  return <div>{stars}</div>;
+  return <div className="Container-rating-star">{stars}</div>;
 };
