@@ -1,5 +1,6 @@
 // Importer les bibliothèques et composants nécessaires
 import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "../Styles/Accommodation.css";
 import { AccommodationTitle } from "../components/AccommodationTitle";
