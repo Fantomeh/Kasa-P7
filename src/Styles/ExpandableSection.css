@@ -20,6 +20,7 @@
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 12px;
+    font-size: 1.5rem;
 }
 
 .Expandable-img{
@@ -31,7 +32,8 @@
 
 .Expandable-text{
     color: #FF6060;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 20px;
     margin-bottom: 35px;
+    padding-left: 21px;
 }

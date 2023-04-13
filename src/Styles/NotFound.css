@@ -1,0 +1,58 @@
+*{
+    font-family: Montserrat;
+
+}
+
+
+
+
+
+@media (min-width: 400px) {
+  
+
+    .container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Erreur-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #FF6060;
+    }
+
+    .H1-erreur{
+        font-size: 2rem;
+    }
+
+    .p-erreur{
+
+    }
+
+    .Link-Erreur{
+        margin-top: 1px;
+        
+        color: #FF6060;
+    }
+
+
+
+   
+}
+
+
+@media (min-width: 1024px) {
+
+    .container {
+        width: 95%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+   
+}

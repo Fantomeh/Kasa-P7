@@ -6,6 +6,7 @@ import ExpandableSection from "./ExpandableSection";
 export const EquipmentList = ({ equipments }) => {
   // Retourner un composant ExpandableSection contenant la liste des équipements
   return (
+    <div className="List-Destop">
     <ExpandableSection title="Équipements">
       {/* Créer un élément div pour contenir la liste des équipements */}
       <div>
@@ -16,5 +17,6 @@ export const EquipmentList = ({ equipments }) => {
         ))}
       </div>
     </ExpandableSection>
+    </div>
   );
 };

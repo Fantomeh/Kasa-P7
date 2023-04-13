@@ -17,8 +17,9 @@
 .banner-h1 {
   margin-left: 21px;
   color: #fff;
-font-size: clamp(20px,4vw,48px);
+font-size: 2rem;
 font-weight: 500;
+margin-right: 1px;
   
 }
 
@@ -37,9 +38,18 @@ font-weight: 500;
 /* Styles pour les ordinateurs de bureau */
 @media (min-width: 1024px) {
   .banner {
-
+    
+    justify-content: center;
     height: 302px;
   
+  }
+
+
+  .banner-h1 {
+  
+  font-size: 4rem;
+  
+    
   }
   
 }

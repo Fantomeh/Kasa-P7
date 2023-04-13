@@ -1,4 +1,6 @@
-*{
+
+
+* {
     font-family: Montserrat;
 
 }
@@ -15,11 +17,7 @@
 
     /*CAROUSEL*/
 
-    .classImage {
-        height: 255px;
-        width: 335px;
-        border-radius: 10px;
-    }
+
 
     .carousel {
         position: relative;
@@ -31,8 +29,9 @@
 
     .classImage {
         width: 100%;
-        height: 400px;
+        height: 415px;
         object-fit: cover;
+        border-radius: 25px;
     }
 
     .div-boutons {
@@ -49,6 +48,8 @@
         cursor: pointer;
         width: 30px;
         height: auto;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
     button {
@@ -78,10 +79,13 @@
 
     .AccommodationTitle {
         color: #FF6060;
+        font-size: 36px;
+        margin-bottom: 1px;
     }
 
     .Location {
         color: #FF6060;
+        margin-top: 1px;
     }
 
     .tag-list {
@@ -93,7 +97,7 @@
 
     .tag-item {
         background-color: #FF6060;
-        border-radius: 5px;
+        border-radius: 30px;
         padding: 5px 29px;
         margin: 5px;
         color: #fff;
@@ -106,17 +110,19 @@
 
     .host-name {
         color: #FF6060;
-        padding: 5px 10px;
-        margin-right: 10px;
         font-size: 1.3rem;
+        height: 33px;
+        width: 71px;
+        margin-left: 69px;
 
     }
 
     .host-img {
         border-radius: 50%;
-        width: 100px;
-        height: 100px;
+        width: 64px;
+        height: 64px;
         object-fit: cover;
+        margin-top: 11px;
     }
 
     .Rating-name {
@@ -132,9 +138,44 @@
     }
 
     .rating-star {
-        width: 18px;
-        margin-left: 6px;
+        width: 24px;
+        margin-left: 13px;
     }
 
+
+}
+
+@media (min-width: 1024px) {
+
+    .container-Destop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Rating-name {
+        flex-direction: column-reverse;
+    }
+
+    .ExpandableSection-Destop {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .List-Destop {
+        margin-left: 76px;
+        width: 100%;
+    }
+
+    .Container-rating-star {
+
+        margin-bottom: 47px;
+    }
+
+    .classImage {
+        
+        height: 255px;
+        
+    }
 
 }
