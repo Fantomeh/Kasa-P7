@@ -40,8 +40,8 @@ const ExpandableSection = ({ title, children }) => {
           }}
         />
       </div>
-      {/* Si la section est ouverte, affichez les enfants (le contenu de la section) */}
-      {isOpen && <div className='Expandable-text'>{children}</div>}
+      {/* Ajoutez une classe conditionnelle pour gérer l'effet de déroulement */}
+      <div className={`Expandable-text ${isOpen ? 'open' : 'closed'}`}>{children}</div>
     </div>
   );
 };

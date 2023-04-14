@@ -1,4 +1,4 @@
-*{
+* {
     font-family: Montserrat;
 
 }
@@ -8,15 +8,15 @@
 
 
 @media (min-width: 400px) {
-  
+
 
     .container {
-        width: 95%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .Erreur-container{
+    .Erreur-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -24,23 +24,28 @@
         color: #FF6060;
     }
 
-    .H1-erreur{
-        font-size: 2rem;
+    .H1-erreur {
+        font-size: 96px;
     }
 
-    .p-erreur{
-
-    }
-
-    .Link-Erreur{
+    .p-erreur {
         margin-top: 1px;
-        
+        margin-bottom: 1px;
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .Link-Erreur {
+        font-size: 1rem;
+        margin-top: 160px;
+        margin-bottom: 1px;
         color: #FF6060;
     }
 
 
 
-   
+
 }
 
 
@@ -52,7 +57,19 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .H1-erreur {
+        font-size: 200px;
+        margin-bottom: 1px;
+        margin-top: 1px;
+    }
+
+    .p-erreur {
+        margin-top: 34px;
+    }
+
     
 
-   
+    
+
 }

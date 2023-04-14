@@ -8,6 +8,7 @@ import '../Styles/NotFound.css'
 
 const NotFound = () => {
   return (
+    <>
     <div className='container'>
       <Header />
       <div className='Erreur-container'>
@@ -15,8 +16,10 @@ const NotFound = () => {
         <p className='p-erreur'>Oups! La page que vous demandez n'existe pas.</p>
         <Link className='Link-Erreur' to="/">Retourner sur la page d’accueil</Link>
       </div>
+      </div>
       <Footer />
-    </div>
+      </>
+    
   );
 };
 
