@@ -1,6 +1,5 @@
 * {
     font-family: Montserrat;
-
 }
 
 
@@ -14,8 +13,6 @@
 @media (min-width: 400px) {
 
     /*CAROUSEL*/
-
-
 
     .carousel {
         position: relative;
@@ -151,6 +148,16 @@
         margin-left: 13px;
     }
 
+    .equipment-list  {
+        margin-bottom: 14px;
+        margin-top: 14px;
+      }
+
+    .equipment-list p {
+        margin-bottom: 1px;
+        margin-top: 4px;
+      }
+      
 
 }
 
@@ -182,7 +189,6 @@
 
     .classImage {
         height: 255px;
-
     }
 
 }
