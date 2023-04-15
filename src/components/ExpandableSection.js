@@ -1,11 +1,9 @@
-// Importez les dépendances nécessaires
 import React, { useState } from 'react';
 import '../Styles/ExpandableSection.css';
-// Importez l'image de la flèche à partir du dossier img
 import minifleche from '../img/minifleche.png';
 
-// Créez le composant ExpandableSection, qui prend un titre et des enfants en tant que props
-const ExpandableSection = ({ title, children }) => {
+// Ajoutez la prop "id" au composant ExpandableSection
+const ExpandableSection = ({ id, title, children }) => {
   // Utilisez l'état pour déterminer si la section est ouverte ou fermée
   const [isOpen, setIsOpen] = useState(false);
 
@@ -40,11 +38,10 @@ const ExpandableSection = ({ title, children }) => {
           }}
         />
       </div>
-      {/* Ajoutez une classe conditionnelle pour gérer l'effet de déroulement */}
-      <div className={`Expandable-text ${isOpen ? 'open' : 'closed'}`}>{children}</div>
+      {/* Si la section est ouverte, affichez les enfants (le contenu de la section) */}
+      {isOpen && <div className='Expandable-text'>{children}</div>}
     </div>
   );
 };
 
-// Exportez le composant pour l'utiliser dans d'autres parties de l'application
 export default ExpandableSection;
