@@ -1,4 +1,3 @@
-// EquipmentList.js
 import React from "react";
 import ExpandableSection from "./ExpandableSection";
 
@@ -7,7 +6,7 @@ export const EquipmentList = ({ equipments }) => {
     <div className="List-Destop">
       <ExpandableSection title="Équipements">
         <div>
-          <div>
+          <div className="equipment-list">
             {equipments.map((equipment, index) => (
               <p key={index}>{equipment}</p>
             ))}
@@ -17,3 +16,4 @@ export const EquipmentList = ({ equipments }) => {
     </div>
   );
 };
+

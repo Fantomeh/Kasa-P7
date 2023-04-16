@@ -2,7 +2,10 @@
     font-family: Montserrat;
 }
 
-
+.width{
+    width: 100%;
+    
+}
 
 .container {
     width: 95%;
@@ -180,7 +183,7 @@
 
     .List-Destop {
         margin-left: 76px;
-        width: 100%;
+        
     }
 
     .Container-rating-star {
@@ -190,5 +193,7 @@
     .classImage {
         height: 255px;
     }
+
+
 
 }

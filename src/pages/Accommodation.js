@@ -55,44 +55,50 @@ export const Accommodation = () => {
   // Retourner le contenu du composant Accommodation avec les composants et les données du logement
   return (
     <>
-      <div className="container">
-        {/* Afficher le composant Header */}
-        <Header />
+    <div className="container">
+      {/* Afficher le composant Header */}
+      <Header />
 
-        {/* Afficher le composant Carousel avec les images du logement */}
-        <Carousel pictures={accommodation.pictures} />
-        <div className="container-Destop">
-          <div className="Mini-container-Destop">
-            {/* Afficher le titre du logement */}
-            <AccommodationTitle title={accommodation.title} />
+      {/* Afficher le composant Carousel avec les images du logement */}
+      <Carousel pictures={accommodation.pictures} />
+      <div className="container-Destop">
+        <div className="Mini-container-Destop">
+          {/* Afficher le titre du logement */}
+          <AccommodationTitle title={accommodation.title} />
 
-            {/* Afficher les informations de localisation dans une section extensible */}
-            <Localisation location={accommodation.location} />
+          {/* Afficher les informations de localisation dans une section extensible */}
+          <Localisation location={accommodation.location} />
 
-            {/* Afficher la liste des tags */}
-            <TagList tags={accommodation.tags} />
-          </div>
-          <div className="Rating-name">
-            {/* Afficher les étoiles en fonction du rating */}
-            <RatingStars rating={accommodation.rating} />
-
-            {/* Afficher les détails de l'hôte */}
-            <HostDetails host={accommodation.host} />
-          </div>
-
+          {/* Afficher la liste des tags */}
+          <TagList tags={accommodation.tags} />
         </div>
-        <div className="ExpandableSection-Destop">
-          {/* Afficher la description du logement dans une section extensible */}
+        <div className="Rating-name">
+          {/* Afficher les étoiles en fonction du rating */}
+          <RatingStars rating={accommodation.rating} />
+
+          {/* Afficher les détails de l'hôte */}
+          <HostDetails host={accommodation.host} />
+        </div>
+
+      </div>
+      <div className="ExpandableSection-Destop">
+        
+        {/* Ajoutez une div autour de la section extensible "Description" */}
+        <div className="width">
           <ExpandableSection title="Description">
             <p>{accommodation.description}</p>
           </ExpandableSection>
-
-          {/* Afficher la liste des équipements dans une section extensible */}
+        </div>
+        
+        {/* Ajoutez une div autour de la section extensible "Équipements" */}
+        <div className="width">
           <EquipmentList equipments={accommodation.equipments} />
         </div>
+       
       </div>
-      {/* Afficher le composant Footer */}
-      <Footer />
-    </>
+    </div>
+    {/* Afficher le composant Footer */}
+    <Footer />
+  </>
   );
 };
