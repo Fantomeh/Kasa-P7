@@ -92,8 +92,16 @@ export const Accommodation = () => {
         
         {/* Ajoutez une div autour de la section extensible "Équipements" */}
         <div className="width">
-          <EquipmentList equipments={accommodation.equipments} />
-        </div>
+            <ExpandableSection title="Équipements">
+              <div>
+                <div className="equipment-list">
+                  {accommodation.equipments.map((equipment, index) => (
+                    <p key={index}>{equipment}</p>
+                  ))}
+                </div>
+              </div>
+            </ExpandableSection>
+          </div>
        
       </div>
     </div>
