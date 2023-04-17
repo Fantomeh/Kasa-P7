@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import "../Styles/Accommodation.css";
 import { AccommodationTitle } from "../components/AccommodationTitle";
 import Carousel from "../components/Carousel";
-import { EquipmentList } from "../components/EquipmentList";
 import ExpandableSection from "../components/ExpandableSection";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
