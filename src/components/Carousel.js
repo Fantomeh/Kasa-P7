@@ -9,7 +9,7 @@ const Carousel = ({ pictures }) => {
 
   // Fonction pour passer à l'image précédente
   const onPreviousBtnClick = () => {
-    if (index === 0) setIndex(pictures.length - 1);
+    if (index === 0) setIndex(pictures.length - 1); // pour obtenir l'index de la dernière image
     else setIndex(index - 1);
   };
 

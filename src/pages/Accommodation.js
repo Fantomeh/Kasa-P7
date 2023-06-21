@@ -23,7 +23,7 @@ export const Accommodation = () => {
   // Utiliser useEffect pour exécuter du code lors du montage ou de la mise à jour du composant
   useEffect(() => {
     // Récupérer les données de logements à partir du fichier logements.json
-    fetch('/logements.json')
+    fetch(`${process.env.PUBLIC_URL}/logements.json`)
       .then((response) => response.json()) // Convertir la réponse en JSON
       .then((data) => {
         // Trouver le logement correspondant à l'ID récupéré des paramètres de l'URL
