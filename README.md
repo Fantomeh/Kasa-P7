@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+Projet Kasa - Refonte de la Plateforme de Location d'Appartements
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est une refonte de la plateforme web de Kasa, une entreprise leader en France dans la location d'appartements entre particuliers. L'objectif est de développer l'interface utilisateur de la plateforme en utilisant React.
+![kasa](https://github.com/Fantomeh/Kasa-P7/assets/115874284/c6eaf694-0ba5-4381-b9a6-c83781849019)
 
-## Available Scripts
 
-In the project directory, you can run:
+Objectif
 
-### `npm start`
+L'objectif de ce projet est de démarrer un projet React et de développer l'ensemble de l'application en créant des composants React, en configurant les routes avec React Router, et en suivant les maquettes Figma fournies tout en respectant les contraintes techniques et fonctionnelles.
+Technologies Utilisées
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    React (Créé avec Create React App)
+    React Router
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Fonctionnalités Clés
+Galerie d'images
 
-### `npm test`
+    Défilement cyclique des images (Si on est à la première image et qu'on clique sur "Image précédente", on voit la dernière image et inversement).
+    La hauteur de la galerie est fixe et les images sont coupées et centrées dans le cadre de l'image.
+    Les boutons "Suivant" et "Précédent" n'apparaissent pas s'il n'y a qu'une seule image.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Collapse
 
-### `npm run build`
+    Les collapses sont fermés par défaut lors de l'initialisation de la page.
+    Ils peuvent être ouverts et fermés en cliquant dessus.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Structure du Projet
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ce dépôt contient:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Le code React de l’application.
+    Le code React Router pour les routes dans un fichier dédié.
+    Fichier JSON contenant des données de test pour la simulation.
 
-### `npm run eject`
+Installation et Démarrage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Clonez ce dépôt sur votre machine locale.
+    Naviguez vers le répertoire du projet.
+    Exécutez npm install pour installer toutes les dépendances.
+    Exécutez npm start pour démarrer l'application. Cela devrait ouvrir l'application dans votre navigateur par défaut.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Aperçu du Projet: https://fantomeh.github.io/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Présentation des différentes pages, navigation entre elles, et interactions avec tous les éléments interactifs, en respectant les contraintes de design et de fonctionnalité fournies dans les maquettes Figma :https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/ARCHIVE-UI-Design-Kasa-FR?type=design&node-id=3-0&mode=design
