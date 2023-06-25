@@ -39,6 +39,6 @@ Installation et Démarrage
     Exécutez npm install pour installer toutes les dépendances.
     Exécutez npm start pour démarrer l'application. Cela devrait ouvrir l'application dans votre navigateur par défaut.
 
-Aperçu du Projet: https://fantomeh.github.io/
+Aperçu du Projet: [https://fantomeh.github.io/](https://fantomeh.github.io/Kasa-P7/)
 
 Présentation des différentes pages, navigation entre elles, et interactions avec tous les éléments interactifs, en respectant les contraintes de design et de fonctionnalité fournies dans les maquettes Figma :https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/ARCHIVE-UI-Design-Kasa-FR?type=design&node-id=3-0&mode=design
